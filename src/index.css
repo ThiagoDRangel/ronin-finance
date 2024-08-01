@@ -1,0 +1,46 @@
+:root {
+  --color-primary: #FF6F00;
+  --color-secondary: #0033A0;
+  --color-tertiary: #1C1C1C;
+  --color-quaternary: #000000;
+  --color-quinary: #f7f7f7;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  color: unset;
+}
+
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+  background-color: gray;
+  box-sizing: border-box;
+  font-size: 1.6rem; /* Define o tamanho base do texto para 16px */
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
