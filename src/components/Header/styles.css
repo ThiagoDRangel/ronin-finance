@@ -16,7 +16,8 @@
 
 .container-crypto {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-end;
+    margin-left: 60rem;
 }
 
 li {
@@ -25,6 +26,14 @@ li {
     font-weight: 500;
 }
 
-.container-crypto li:last-child {
-    margin-right: 30rem;
+.btn-wallet {
+    background-color: var(--color-secondary);
+    border: none;
+    border-radius: 1rem;
+    color: var(--color-quinary);
+    font-size: 1.5rem;
+    margin-right: 3rem;
+    padding: 1rem 2rem;
 }
+
+

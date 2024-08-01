@@ -1,8 +1,10 @@
+import './styles.css';
+
 function TableFoot () {
     return (
-        <tfoot>
+        <tfoot className="container-footer">
             <tr>
-                <td>Rodapé da tabela</td>
+                <td>Simple finance control</td>
             </tr>
         </tfoot>
     );

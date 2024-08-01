@@ -1,14 +1,18 @@
+import './styles.css';
+
 function TableHead () {
   return (
-    <thead>
+    <thead className="container-form-head">
       <tr>
-        <th>Título da tabela</th>
+        <th className="table-title">Financial Control</th>
       </tr>
       <tr>
-        <th>coluna 1</th>
-        <th>coluna 2</th>
-        <th>coluna 3</th>
-        <th>coluna 4</th>
+        <th className="item">Homeland(AXS)</th>
+        <th className="item">Katana(USDC-RON)</th>
+        <th className="item">Katana(AXS-RON)</th>
+        <th className="item">Katana(SLP-RON)</th>
+        <th className="item">RON Staking</th>
+        <th className="item">AXS Staking</th>
       </tr>
     </thead>
   )

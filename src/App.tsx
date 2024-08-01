@@ -1,8 +1,9 @@
-import Footer from "./components/Footer"
-import Header from "./components/Header"
-import TableBody from "./components/TableBody"
-import TableFoot from "./components/TableFoot"
-import TableHead from "./components/TableHead"
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import TableBody from "./components/TableBody";
+import TableFoot from "./components/TableFoot";
+import TableHead from "./components/TableHead";
+import './App.css';
 
 function App() {
 

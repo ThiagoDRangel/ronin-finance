@@ -15,6 +15,7 @@ function Header () {
         <li>SLP</li>
         <li>USDC</li>
       </ul>
+      <button className="btn-wallet">Connect Wallet</button>
     </header>
   )
 }

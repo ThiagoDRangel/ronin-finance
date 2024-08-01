@@ -1,7 +1,9 @@
+import './styles.css';
+
 function Footer () {
   return (
-    <footer>
-      <p>Footer</p>
+    <footer className="footer">
+      <p>© 2024 ThiagoDRangel. All rights reserved.</p>
     </footer>
   )
 }
