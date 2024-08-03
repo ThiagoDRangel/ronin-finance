@@ -1,23 +1,8 @@
-import useCryptoPrices from '../../Hooks/useCryptoPrices';
 import earnings from '../../data/earnings';
-import IEarnings from '../../interfaces/IEarnings';
+import ITableBodyProps from '../../interfaces/ITableBodyProps';
 import './styles.css';
 
-function TableBody() {
-
-  const { prices } = useCryptoPrices();
-
-  const earningsInUsd: IEarnings = {
-    homeland: earnings.homeland * prices.axs,
-    katanaUsdcRon: earnings.katanaUsdcRon * prices.ron,
-    katanaAxsRon: earnings.katanaAxsRon * prices.ron,
-    katanaSlpRon: earnings.katanaSlpRon * prices.ron,
-    ronStaking: earnings.ronStaking * prices.ron,
-    axsStaking: earnings.axsStaking * prices.axs,
-  };
-
-  const totalEarnings = Object.values(earningsInUsd).reduce((acc, curr) => acc + curr, 0);
-
+function TableBody({ earningsInUsd, totalEarnings }: ITableBodyProps) {
   return (
     <tbody className="form-content">
       <tr>

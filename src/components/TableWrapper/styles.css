@@ -1,0 +1,22 @@
+.table-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.btn-generate-pdf {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #003366;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn-generate-pdf:hover {
+    background-color: #0055cc;
+}
+  
