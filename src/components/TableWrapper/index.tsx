@@ -3,6 +3,7 @@ import TableHead from '../TableHead';
 import TableBody from '../TableBody';
 import TableFoot from '../TableFoot';
 import { jsPDF } from 'jspdf';
+import autoTable from 'jspdf-autotable';
 import useCryptoPrices from '../../Hooks/useCryptoPrices';
 import earnings from '../../data/earnings';
 import IEarnings from '../../interfaces/IEarnings';
@@ -24,14 +25,23 @@ const TableWrapper: React.FC = () => {
 
   const handleGeneratePdf = () => {
     const doc = new jsPDF();
-    doc.text('Earnings Report:', 10, 10);
-    doc.text(`Homeland: $ ${earningsInUsd.homeland.toFixed(2)}`, 10, 20);
-    doc.text(`Katana USDC/RON: $ ${earningsInUsd.katanaUsdcRon.toFixed(2)}`, 10, 30);
-    doc.text(`Katana AXS/RON: $ ${earningsInUsd.katanaAxsRon.toFixed(2)}`, 10, 40);
-    doc.text(`Katana SLP/RON: $ ${earningsInUsd.katanaSlpRon.toFixed(2)}`, 10, 50);
-    doc.text(`RON Staking: $ ${earningsInUsd.ronStaking.toFixed(2)}`, 10, 60);
-    doc.text(`AXS Staking: $ ${earningsInUsd.axsStaking.toFixed(2)}`, 10, 70);
-    doc.text(`Total: $ ${totalEarnings.toFixed(2)}`, 10, 80);
+    doc.setFontSize(18);
+    doc.text('Earnings Report', 14, 22);
+
+    autoTable(doc, {
+      startY: 30,
+      head: [['Item', 'Earnings in USD']],
+      body: [
+        ['Homeland', `$ ${earningsInUsd.homeland.toFixed(2)}`],
+        ['Katana USDC/RON', `$ ${earningsInUsd.katanaUsdcRon.toFixed(2)}`],
+        ['Katana AXS/RON', `$ ${earningsInUsd.katanaAxsRon.toFixed(2)}`],
+        ['Katana SLP/RON', `$ ${earningsInUsd.katanaSlpRon.toFixed(2)}`],
+        ['RON Staking', `$ ${earningsInUsd.ronStaking.toFixed(2)}`],
+        ['AXS Staking', `$ ${earningsInUsd.axsStaking.toFixed(2)}`],
+        ['Total', `$ ${totalEarnings.toFixed(2)}`],
+      ],
+    });
+
     doc.save('earnings-report.pdf');
   };
 
