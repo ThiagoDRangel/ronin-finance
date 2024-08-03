@@ -15,9 +15,20 @@
 }
 
 .container-crypto {
+    align-items: center;
     display: flex;
     justify-content: flex-end;
     margin-left: 60rem;
+}
+
+.icon-price {
+    align-items: center;
+    display: flex;
+}
+
+.icon-price img {
+    margin-right: 1rem;
+    width: 4rem;
 }
 
 li {
@@ -36,4 +47,23 @@ li {
     padding: 1rem 2rem;
 }
 
-
+.highlight-green {
+    animation: highlight 3s;
+    background-color: green;
+    border-radius: 0.5rem;
+    padding: 1rem;
+  }
+  
+  .highlight-red {
+    animation: highlight 3s;
+    background-color: red;
+    border-radius: 0.5rem;
+    padding: 1rem;
+  }
+  
+  @keyframes highlight {
+    from { opacity: 1; }
+    to { opacity: 0.5; }
+  }
+  
+  
