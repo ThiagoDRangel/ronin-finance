@@ -40,3 +40,119 @@
     margin-top: 5rem;
     width: 20rem;
 }
+
+@media (max-width:1281px) {
+    .content-item {
+        padding: 1rem;
+        font-size: 1.4rem;
+        width: 15rem;
+    }
+    
+    .content-earn {
+        padding: 1rem;
+        font-size: 1.4rem;
+        width: 15rem;
+    }
+    
+    .content-final {
+        border-radius: 1rem;
+        padding: 1rem;
+        font-size: 1.4rem;
+        margin-top: 5rem;
+        width: 15rem;
+    }
+}
+
+@media (max-width:1025px) {
+    .content-item {
+        padding: 1rem;
+        font-size: 1.2rem;
+        width: 12rem;
+    }
+    
+    .content-earn {
+        padding: 1rem;
+        font-size: 1.2rem;
+        width: 12rem;
+    }
+    
+    .content-final {
+        border-radius: 1rem;
+        padding: 1rem;
+        font-size: 1.2rem;
+        margin-top: 5rem;
+        width: 12rem;
+    }
+}
+
+@media (max-width:801px) {
+    .content-item {
+        padding: 1rem;
+        font-size: 1.2rem;
+        width: 8.7rem;
+    }
+    
+    .content-earn {
+        padding: 1rem;
+        font-size: 1.2rem;
+        width: 8.7rem;
+    }
+    
+    .content-final {
+        border-radius: 1rem;
+        font-size: 1.4rem;
+        height: 4rem;
+        margin-top: 5rem;
+        width: 12rem;
+    }
+}
+
+@media (max-width:600px) {
+    .content-item {
+        font-size: 1rem;
+        width: 6rem;
+    }
+    
+    .content-earn {
+        font-size: 1rem;
+        width: 6rem;
+    }
+    
+    .content-final {
+        width: 12rem;
+    } 
+}
+
+@media (max-width:480px) {
+    .content-item {
+        font-size: 1rem;
+        height: 5rem;
+        width: 6.5rem;
+    }
+    
+    .content-earn {
+        font-size: 0.8rem;
+        height: 5rem;
+        width: 6rem;
+    }
+}
+
+@media (max-width:320px) {
+    .content-item {
+        font-size: 1rem;
+        height: 6rem;
+        width: 6rem;
+    }
+    
+    .content-earn {
+        font-size: 1.1rem;
+        height: 6rem;
+        width: 5rem;
+    }
+    
+    .content-final {
+        font-size: 1.2rem;
+        height: 3.5rem;
+        width: 8rem;
+    }
+}

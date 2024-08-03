@@ -52,18 +52,217 @@ li {
     background-color: green;
     border-radius: 0.5rem;
     padding: 1rem;
-  }
-  
-  .highlight-red {
+}
+
+.highlight-red {
     animation: highlight 3s;
     background-color: red;
     border-radius: 0.5rem;
     padding: 1rem;
-  }
-  
-  @keyframes highlight {
+}
+
+@keyframes highlight {
     from { opacity: 1; }
     to { opacity: 0.5; }
-  }
-  
-  
+}
+
+@media (min-width:1282px) {
+
+    .icon-home {
+        width: 8rem;
+    }
+
+    .container-crypto {
+        margin-left: 40rem;
+    }
+    
+    .icon-price img {
+        margin-right: 1rem;
+        width: 2.5rem;
+    }
+
+    li {
+        margin-left: 4rem;
+    }
+
+    .btn-wallet {
+        font-size: 1.2rem;
+        margin-right: 3rem;
+        padding: 0.5rem 1rem;
+        height: 4rem;
+        width: 12rem;
+    }
+}
+
+@media (max-width:1281px) {
+    .icon-home {
+        width: 6rem;
+    }
+
+    .container-crypto {
+        margin-left: 30rem;
+    }
+    
+    .icon-price img {
+        margin-right: 1rem;
+        width: 2.5rem;
+    }
+
+    li {
+        margin-left: 4rem;
+    }
+
+    .btn-wallet {
+        font-size: 1.2rem;
+        margin-right: 4rem;
+        padding: 0.5rem 1rem;
+        height: 4rem;
+        width: 12rem;
+    }
+}
+
+@media (max-width:1025px) {
+    .icon-home {
+        width: 6rem;
+    }
+
+    .container-crypto {
+        margin-left: 20rem;
+    }
+    
+    .icon-price img {
+        margin-right: 0.5rem;
+        width: 3.2rem;
+    }
+
+    li {
+        font-size: 1.4rem;
+        margin-left: 2rem;
+    }
+
+    .btn-wallet {
+        font-size: 1.4rem;
+        padding: 0.5rem 1rem;
+        height: 4rem;
+        width: 14rem;
+    }
+}
+
+@media (max-width:801px) {
+    .icon-home {
+        width: 5rem;
+    }
+
+    .container-crypto {
+        margin-left: 12rem;
+    }
+    
+    .icon-price img {
+        margin-right: 0.5rem;
+        width: 2.5rem;
+    }
+
+    li {
+        font-size: 1.2rem;
+        margin-left: 2.2rem;
+    }
+
+    .btn-wallet {
+        font-size: 1.31rem;
+        padding: 0.5rem 1rem;
+        margin-right: 2rem;
+        height: 5rem;
+        width: 9rem;
+    }
+}
+
+@media (max-width:600px) {
+    .container-header {
+        height: 8rem;
+    }
+
+    .icon-home {
+        width: 4rem;
+    }
+
+    .container-crypto {
+        margin-left: 2rem;
+    }
+    
+    .icon-price img {
+        margin-right: 0.5rem;
+        width: 1.9rem;
+    }
+
+    li {
+        font-size: 1.2rem;
+        margin-left: 2.2rem;
+    }
+
+    .btn-wallet {
+        font-size: 1.1rem;
+        margin-right: 2rem;
+        padding: 0.5rem 1rem;
+        height: 4rem;
+        width: 8rem;
+    }
+}
+
+@media (max-width:480px) {
+
+    .icon-home {
+        margin-left: 1.2rem;
+        width: 3.4rem;
+    }
+
+    .container-crypto {
+        margin-left: 0.5rem;
+    }
+    
+    .icon-price img {
+        margin-right: 0.1rem;
+        width: 1.6rem;
+    }
+
+    li {
+        font-size: 1rem;
+        margin-left: 1rem;
+    }
+
+    .btn-wallet {
+        font-size: 0.8rem;
+        margin-right: 2rem;
+        padding: 0.5rem 1rem;
+        height: 4.5rem;
+        width: 5rem;
+    } 
+}
+
+@media (max-width:320px) {
+    .icon-home {
+        margin-left: 1.2rem;
+        width: 3rem;
+    }
+
+    .container-crypto {
+        margin-left: 0.1rem;
+    }
+    
+    .icon-price img {
+        margin-right: 0.2rem;
+        width: 1.8rem;
+    }
+
+    li {
+        font-size: 1rem;
+        margin-left: 0.8rem;
+    }
+
+    .btn-wallet {
+        font-size: 0.8rem;
+        margin-right: 1rem;
+        padding: 0.5rem 1rem;
+        height: 4.5rem;
+        width: 5.5rem;
+    }
+}
