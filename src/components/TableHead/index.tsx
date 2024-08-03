@@ -4,7 +4,7 @@ function TableHead () {
   return (
     <thead className="container-form-head">
       <tr>
-        <th className="table-title">Financial Control</th>
+        <th className="table-title">Earn Control</th>
       </tr>
       <tr>
         <th className="item">Homeland(AXS)</th>
